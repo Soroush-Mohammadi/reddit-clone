@@ -5,3 +5,9 @@
     </NuxtLayout>
   </div>
 </template>
+
+<style>
+body {
+  font-family: Roboto, sans-sarif;
+}
+</style>
