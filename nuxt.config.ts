@@ -3,5 +3,5 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/fonts']
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/fonts', '@nuxt/icon']
 });
