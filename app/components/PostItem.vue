@@ -10,6 +10,13 @@
       <span class="text-sm text-gray-500">in r/{{ post.subreddit }}</span>
     </div>
     <h2 class="text-lg font-bold mt-2 text-white">{{ post.title }}</h2>
+    <div v-if="post.imageUrl" class="mt-2">
+      <img
+        :src="post.imageUrl"
+        alt="Post image"
+        class="rounded-lg w-full max-h-96 object-cover mb-2"
+      />
+    </div>
     <p class="text-gray-400 text-sm">{{ post.content }}</p>
     <div class="flex space-x-4 mt-2 text-sm text-gray-500">
       <span>👍 {{ post.votes }}</span>

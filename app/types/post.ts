@@ -12,4 +12,5 @@ export interface Post {
   votes: number;
   author: User;
   subreddit: string;
+  imageUrl?: string;
 }

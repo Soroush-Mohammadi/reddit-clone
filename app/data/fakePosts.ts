@@ -27,7 +27,8 @@ export const fakePosts: Post[] = [
     createdAt: new Date('2025-09-01T12:00:00'),
     votes: 42,
     author: users[0],
-    subreddit: 'webdev'
+    subreddit: 'webdev',
+    imageUrl: './pictures/001.jpg'
   },
   {
     id: 'p2',
@@ -46,6 +47,7 @@ export const fakePosts: Post[] = [
     createdAt: new Date('2025-09-15T09:45:00'),
     votes: 8,
     author: users[2],
-    subreddit: 'css'
+    subreddit: 'css',
+    imageUrl: './pictures/002.jpg'
   }
 ];
