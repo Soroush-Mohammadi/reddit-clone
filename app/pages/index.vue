@@ -10,5 +10,6 @@ const posts = fakePosts;
   <div>
     <PostItem v-for="post in fakePosts" :key="post.id" :post="post" />
     <MobileMenu />
+    <SearchView />
   </div>
 </template>

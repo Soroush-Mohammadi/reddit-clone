@@ -27,7 +27,16 @@ export const mobileMenu: MenuSection[] = [
         id: 'internet',
         label: 'Internet Culture (Viral)',
         icon: 'vaadin:globe',
-        children: []
+        children: [
+          {
+            id: 'amazing',
+            label: 'Amazing'
+          },
+          {
+            id: 'animal',
+            label: 'Animal & Pets'
+          }
+        ]
       },
       {
         id: 'games',
