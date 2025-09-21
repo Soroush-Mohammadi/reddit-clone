@@ -7,7 +7,9 @@
         class="w-8 h-8 rounded-full"
       />
       <span class="font-thin text-seaSalt">@{{ post.author.username }}</span>
+      
       <span class="text-sm text-gray-500">in r/{{ post.subreddit }}</span>
+      <span class="text-gray-500">{{ post.createdAt.toLocaleDateString() }}</span>
     </div>
     <h2 class="text-lg font-bold mt-2 text-white">{{ post.title }}</h2>
     <div v-if="post.imageUrl" class="mt-2">
@@ -18,13 +20,10 @@
       />
     </div>
     <p class="text-gray-400 text-sm">{{ post.content }}</p>
-    <div class="flex space-x-4 mt-2 text-sm text-gray-500">
-      <span>👍 {{ post.votes }}</span>
-      <span>Posted on {{ post.createdAt.toLocaleDateString() }}</span>
-    </div>
+     
     <div class="flex space-x-4 mt-2">
       <div
-        class="flex justify-around bg-gray-500 rounded-xl items-center py-1 w-16"
+        class="flex justify-around bg-gray-500 rounded-xl items-center  w-16"
       >
         <button>
           <Icon
@@ -34,6 +33,7 @@
             style="color: #fff"
           />
         </button>
+         <span class="text-white">{{ post.votes }}</span>
         <button>
           <Icon
             name="typcn:arrow-down-outline"
