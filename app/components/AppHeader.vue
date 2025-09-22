@@ -9,7 +9,7 @@
     <img src="/Reddit-logo.png" alt="" style="width: 40px" />
     <div class="relative grow mb-8">
       <SearchBox />
-      <SearchView class="hidden"/>
+      <SearchView class="hidden" />
     </div>
     <button
       class="bg-persimmon rounded-2xl text-white flex-none text-xs font-medium p-2"
