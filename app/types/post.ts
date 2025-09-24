@@ -8,9 +8,9 @@ export interface Post {
   id: string;
   title: string;
   content: string;
-  createdAt: Date;
-  votes: number;
-  author: User;
-  subreddit: string;
+  createdAt?: Date;
+  votes?: number;
+  author?: User;
+  subreddit?: string;
   imageUrl?: string;
 }
