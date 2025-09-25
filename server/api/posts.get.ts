@@ -1,15 +1,8 @@
-interface Post {
-  id: number
-  title: string
-  content: string
-}
+import { prisma } from '../utils/prisma' // ✅ recommended in Nuxt 3
+import type { Post } from '@prisma/client' // ✅ generated automatically
 
-export default defineEventHandler((): Post[] => {
-  // Normally, you'd fetch from DB
-  const posts: Post[] = [
-    { id: 1, title: "First Post", content: "Hello Nuxt 3!" },
-    { id: 2, title: "Second Post", content: "This is another post." }
-  ]
-
-  return posts
+export default defineEventHandler(async (): Promise<Post[]> => {
+  return await prisma.post.findMany({
+    orderBy: { id: 'desc' }
+  })
 })
